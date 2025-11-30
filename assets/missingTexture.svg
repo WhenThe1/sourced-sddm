@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="32"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="64"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="96"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="16" x="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="48" y="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="80" y="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="112" y="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="32"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="32" y="32"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="64" y="32"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="96" y="32"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="48" x="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="48" y="48"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="80" y="48"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="112" y="48"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="64"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="32" y="64"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="64" y="64"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="96" y="64"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="80" x="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="48" y="80"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="80" y="80"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="112" y="80"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="96"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="32" y="96"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="64" y="96"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="96" y="96"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" y="112" x="16"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="48" y="112"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="80" y="112"/>
+  <rect width="16" height="16" style="fill: rgb(255, 0, 220);" x="112" y="112"/>
+  <rect width="16" height="16" style="" x="16"/>
+  <rect width="16" height="16" style="" x="48"/>
+  <rect width="16" height="16" style="" x="80"/>
+  <rect width="16" height="16" style="" x="112"/>
+  <rect width="16" height="16" style="" y="16" x="32"/>
+  <rect width="16" height="16" style="" x="64" y="16"/>
+  <rect width="16" height="16" style="" x="96" y="16"/>
+  <rect width="16" height="16" style="" y="16"/>
+  <rect width="16" height="16" style="" y="32" x="16"/>
+  <rect width="16" height="16" style="" x="48" y="32"/>
+  <rect width="16" height="16" style="" x="80" y="32"/>
+  <rect width="16" height="16" style="" x="112" y="32"/>
+  <rect width="16" height="16" style="" y="48" x="32"/>
+  <rect width="16" height="16" style="" x="64" y="48"/>
+  <rect width="16" height="16" style="" x="96" y="48"/>
+  <rect width="16" height="16" style="" y="48"/>
+  <rect width="16" height="16" style="" y="64" x="16"/>
+  <rect width="16" height="16" style="" x="48" y="64"/>
+  <rect width="16" height="16" style="" x="80" y="64"/>
+  <rect width="16" height="16" style="" x="112" y="64"/>
+  <rect width="16" height="16" style="" y="80" x="32"/>
+  <rect width="16" height="16" style="" x="64" y="80"/>
+  <rect width="16" height="16" style="" x="96" y="80"/>
+  <rect width="16" height="16" style="" y="80"/>
+  <rect width="16" height="16" style="" y="96" x="16"/>
+  <rect width="16" height="16" style="" x="48" y="96"/>
+  <rect width="16" height="16" style="" x="80" y="96"/>
+  <rect width="16" height="16" style="" x="112" y="96"/>
+  <rect width="16" height="16" style="" y="112" x="32"/>
+  <rect width="16" height="16" style="" x="64" y="112"/>
+  <rect width="16" height="16" style="" x="96" y="112"/>
+  <rect width="16" height="16" style="" y="112"/>
+</svg>

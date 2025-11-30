@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="260" height="28" viewBox="0 0 260 28.000001" version="1.1" id="svg4630" xmlns="http://www.w3.org/2000/svg">
+  <g id="layer1" transform="translate(0,-1094.5197)">
+    <rect style="fill-opacity: 1; stroke-width: 0.0662532px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(255, 156, 0);" id="rect5175" width="260" height="23.000046" y="1097.5197" x="0"/>
+    <rect style="fill-opacity: 1; stroke-width: 0.132311px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(56, 56, 54);" id="rect5196" width="1" height="24.000046" y="1096.5197" x="0"/>
+    <rect y="1096.5197" x="1" height="1" width="259" id="rect5198" style="fill-opacity: 1; stroke-width: 0.442647px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(56, 56, 54);"/>
+    <rect style="fill-opacity: 1; stroke-width: 0.132px; stroke-miterlimit: 4; stroke-dasharray: none; transform-origin: -259.497px -1109.57px 0px; fill: rgb(185, 186, 183);" id="rect-1" width="1" height="24" y="-1121.5" x="-260" transform="matrix(-1, 0, 0, -1, 518.993006, 2219.139326)"/>
+    <rect y="-1121.5" x="-259" height="1" width="259" id="rect-2" style="fill-opacity: 1; stroke-width: 0.443px; stroke-miterlimit: 4; stroke-dasharray: none; transform-origin: -129.497px -1121.07px 0px; fill: rgb(185, 186, 183);" transform="matrix(-1, 0, 0, -1, 258.994017, 2242.139326)"/>
+  </g>
+</svg>

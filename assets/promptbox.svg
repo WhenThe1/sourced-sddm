@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="480" height="320" viewBox="0 0 480 320.00002" version="1.1" id="svg3840" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs3834">
+    <pattern x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse" viewBox="0 0 100 100" id="pattern-0">
+      <rect x="0" y="0" width="50" height="100" style="fill: black;"/>
+    </pattern>
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(1, 0, 0, 1, 53.214005, 647.304993)"/>
+  </defs>
+  <g id="layer1" transform="matrix(1, 0, 0, 1, 174.28598, -499.804962)">
+    <rect id="rect3842" style="fill-opacity: 1; stroke-width: 0.746763px; stroke: url(&quot;#pattern-0-0&quot;); fill: rgb(121, 121, 121);" x="-174.286" y="499.805" width="480" height="320" rx="12" ry="12"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, -134)">
+    <rect style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(76, 76, 76);" transform="matrix(1, 0, 0, -1, 0, 0)" x="18" y="-160" width="444" height="1"/>
+    <rect style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(188, 188, 188);" transform="matrix(1, 0, 0, -1, 0, 0)" x="18" y="-161" width="444" height="1"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -0.000004, 111)">
+    <rect style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(76, 76, 76);" transform="matrix(1, 0, 0, -1, 0, 0)" x="18" y="-160" width="444" height="1"/>
+    <rect style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(188, 188, 188);" transform="matrix(1, 0, 0, -1, 0, 0)" x="18" y="-161" width="444" height="1"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="26" height="26" viewBox="0 0 26 26" version="1.1" id="svg5780" xmlns="http://www.w3.org/2000/svg">
+  <g id="layer1" transform="translate(0,-290.64998)">
+    <rect style="fill-opacity: 1; stroke-width: 0.11239px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(122, 122, 122);" id="rect6325" width="26" height="25.999987" y="290.64999" x="0"/>
+    <rect style="fill-opacity: 1; stroke-width: 0.0491113px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(182, 182, 182);" id="rect6346" width="25" height="1" y="290.64999" x="0"/>
+    <rect y="291.64999" height="24" width="1" id="rect6348" style="fill-opacity: 1; stroke-width: 0.0236335px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(182, 182, 182);" x="0"/>
+    <rect y="315.64999" height="1" width="26" id="rect6350" style="fill-opacity: 1; stroke-width: 0.0493691px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(91, 91, 91);" x="0"/>
+    <rect style="fill-opacity: 1; stroke-width: 0.0241648px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(91, 91, 91);" id="rect6352" width="1" height="25" x="25" y="290.64999"/>
+    <rect style="fill-opacity: 1; stroke: none; stroke-width: 3px; stroke-linecap: round; stroke-dasharray: none; paint-order: stroke; fill: rgb(64, 64, 64);" id="rect4" width="11.815513" height="1.9999585" x="8.1844864" y="299.65002"/>
+    <path style="fill: none; stroke-width: 2.00001px; stroke-linecap: butt; stroke-opacity: 1; paint-order: stroke; stroke: rgb(64, 64, 64);" d="m 11.0549,297.64998 -4.3056495,3 4.3056495,3" id="path4"/>
+    <rect style="fill-opacity: 1; stroke: none; stroke-width: 3px; stroke-linecap: round; stroke-dasharray: none; paint-order: stroke; fill: rgb(64, 64, 64);" id="rect6" width="11.843487" height="1.9999585" x="-17.843487" y="305.64999" transform="scale(-1,1)"/>
+    <path style="fill: none; stroke-width: 2.00001px; stroke-linecap: butt; stroke-opacity: 1; paint-order: stroke; stroke: rgb(64, 64, 64);" d="m 14.973087,303.64993 4.30565,3 -4.30565,3" id="path6"/>
+  </g>
+</svg>

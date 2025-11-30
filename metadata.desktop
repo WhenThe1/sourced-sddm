@@ -1,0 +1,17 @@
+[SddmGreeterTheme]
+Name=Sourced
+Description=Source Engine Inspired SDDM Theme
+Author=WhenThe1
+Copyright=
+License=GPLv3
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/WhenThe1
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=redplaybest@gmail.com
+Theme-Id=sourced
+Theme-API=2.0
+QtVersion=6

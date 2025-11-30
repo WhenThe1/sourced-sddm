@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="26" height="26" viewBox="0 0 26 26" version="1.1" id="svg5780" xmlns="http://www.w3.org/2000/svg">
+  <rect style="fill-opacity: 1; stroke-width: 0.112px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(122, 122, 122);" id="rect6325" width="26" height="26"/>
+  <rect style="fill-opacity: 1; stroke-width: 0.049px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(182, 182, 182);" id="rect6346" width="25" height="1"/>
+  <rect y="1" height="24" width="1" id="rect6348" style="fill-opacity: 1; stroke-width: 0.024px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(182, 182, 182);"/>
+  <rect y="25" height="1" width="26" id="rect6350" style="fill-opacity: 1; stroke-width: 0.049px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(91, 91, 91);"/>
+  <rect style="fill-opacity: 1; stroke-width: 0.024px; stroke-miterlimit: 4; stroke-dasharray: none; fill: rgb(91, 91, 91);" id="rect6352" width="1" height="25" x="25"/>
+  <path style="fill:none;stroke:#404040;stroke-width:3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" id="path1" d="M 17.597 8.446 C 19.456 10.303 20.013 13.096 19.006 15.522 C 18 17.949 15.629 19.531 13 19.531 C 10.371 19.531 8 17.949 6.994 15.522 C 5.987 13.096 6.544 10.303 8.403 8.446"/>
+  <rect style="fill: rgb(64, 64, 64); fill-opacity: 1; stroke: none; stroke-width: 3px; stroke-linecap: round; stroke-dasharray: none; paint-order: stroke;" id="rect3" width="3" height="8" x="11.5" y="5"/>
+</svg>
