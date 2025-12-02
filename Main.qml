@@ -310,7 +310,8 @@ Rectangle {
 
                 Keys.onPressed: (event)=> {
                     if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-                        sddm.login(nameinput.text, password.text, sessionIndex)
+                        loginEffect.play()
+                        loginTimer.start()
                         event.accepted = true
                     }
                 }
