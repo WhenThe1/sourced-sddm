@@ -6,7 +6,6 @@
  *      Overall layout and functionality by phob1an, asset changes and additional functionality by WhenThe1.
  *
  *      This work is under the GPLv3 license.
- *
  */
 
 
@@ -18,6 +17,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtCore
+import QtMultimedia
 import SddmComponents 2.0
 import "."
 
@@ -74,6 +74,35 @@ Rectangle {
          }
     }
 
+    //Sfx Category
+
+    MediaPlayer {
+        id: backgroundTheme
+        audioOutput: AudioOutput { volume: 0.5 }
+        source: "audio/srcbox.mp3"
+        loops: MediaPlayer.Infinite
+    }
+
+    SoundEffect {
+        id: typingEffect
+        source: "audio/click.wav"
+        volume: 0.5
+    }
+
+    SoundEffect {
+        id: clickEffect
+        source: "audio/friend_join.wav"
+        volume: 0.5
+    }
+
+    SoundEffect {
+        id: loginEffect
+        source: "audio/cone.wav"
+        volume: 0.5
+    }
+
+
+
     Image {
         id: promptBox
         anchors.centerIn : parent
@@ -81,6 +110,8 @@ Rectangle {
         opacity: 0.7
         width: 480
         height: 320
+
+        onStatusChanged: if (promptBox.status == Image.Ready) backgroundTheme.play()
 
         Text {
             id: greetingText
@@ -143,6 +174,8 @@ Rectangle {
                 selectByMouse: true
                 selectionColor: "#22476d"
                 selectedTextColor: "#f4f4ff"
+
+                onTextEdited: typingEffect.play()
 
                 Image {
                     id: userPictureCorners
@@ -241,6 +274,8 @@ Rectangle {
                 color: "#000000"
                 selectionColor: "#22476d"
                 selectedTextColor: "#f4f4ff"
+
+                onTextEdited: typingEffect.play()
 
                 background: Image {
                     id: textback1
@@ -349,7 +384,13 @@ Rectangle {
                 }
 
                 onPressed: parent.source = "assets/buttondown.svg"
-                onReleased:  sddm.login(nameinput.text, password.text, sessionIndex), parent.source = "assets/buttonup.svg"
+                onReleased: parent.source = "assets/buttonup.svg", loginEffect.play(), loginTimer.start()
+
+                Timer {
+                    id: loginTimer
+                    interval: 1500
+                    onTriggered: sddm.login(nameinput.text, password.text, sessionIndex)
+                }
             }
 
             Text{
@@ -417,9 +458,16 @@ Rectangle {
                 }
                 onReleased : {
                     parent.source = "assets/powerup.svg"
-                    sddm.powerOff()
+                    clickEffect.play()
+                    shutdownTimer.start()
                 }
             }
+        }
+
+        Timer {
+            id: shutdownTimer
+            interval: 700
+            onTriggered: sddm.powerOff()
         }
 
         Image {
@@ -452,11 +500,18 @@ Rectangle {
                 }
                 onReleased : {
                     parent.source = "assets/rebootup.svg"
-                    sddm.reboot()
+                    clickEffect.play()
+                    rebootTimer.start()
                 }
             }
         }
     } //promptbox
+
+    Timer {
+        id: rebootTimer
+        interval: 700
+        onTriggered: sddm.reboot()
+    }
 
     Component.onCompleted : {
         nameinput.focus = true
