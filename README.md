@@ -23,6 +23,8 @@ This theme comes with a few configuration options you can tweak to your liking. 
 - Individual Audios Overrides
   - Each entry allows you to specify a filepath to an audio file of your choosing (Default: "")
   - Note: It is recommended to utilize compressed audio files when specifying the backgroundTheme, while using uncompressed audio files for the others.
+- newSrcboxTheme
+  - Choose whether to use the compressed or uncompressed variant of the sourcebox theme. Overriden by any custom background theme you specify (0 - Compressed; 1 - Uncompressed, default: 0)
 
 
 ## Credits
