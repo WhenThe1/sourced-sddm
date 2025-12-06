@@ -1,4 +1,7 @@
 [General]
+
 background=Int_Background.png
 showClock=true
 type=image
+
+

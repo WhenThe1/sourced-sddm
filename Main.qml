@@ -52,6 +52,9 @@ Rectangle {
         onTriggered: container.dateTime = new Date()
     }
 
+
+    // Fonts
+
     FontLoader {
         id: myfontNormal
         source: "./assets/gordin-regular.ttf"
@@ -76,32 +79,57 @@ Rectangle {
 
     //Sfx Category
 
+    MediaDevices {
+        id: defaultOutput
+    }
+
     MediaPlayer {
         id: backgroundTheme
-        audioOutput: AudioOutput { volume: 0.5 }
-        source: "audio/srcbox.mp3"
+        audioOutput: AudioOutput { device: defaultOutput.defaultAudioOutput; volume: config.backgroundVolume }
+        source: config.stringValue("backgroundTheme") ? config.backgroundTheme : config.intValue("newSrcboxTheme") ? "audio/newBox.mp3" : "audio/oldBox.mp3"
         loops: MediaPlayer.Infinite
     }
 
     SoundEffect {
         id: typingEffect
-        source: "audio/click.wav"
-        volume: 0.5
+        source: config.stringValue("typingEffect") ? config.typingEffect : "audio/click.wav"
+        volume: config.typingVolume
     }
 
     SoundEffect {
         id: clickEffect
-        source: "audio/friend_join.wav"
-        volume: 0.5
+        source: config.stringValue("clickEffect") ? config.clickEffect : "audio/friend_join.wav"
+        volume: config.clickVolume
     }
 
     SoundEffect {
         id: loginEffect
-        source: "audio/cone.wav"
-        volume: 0.5
+        source: config.stringValue("loginEffect") ? config.loginEffect : "audio/cone.wav"
+        volume: config.loginVolume
     }
 
+    // Input Fields and Avatar Picture flickering animation
 
+    SequentialAnimation {
+        id: loginFlicker
+
+        PropertyAction{targets: [textback, textback1]; property: "visible"; value: false}
+        PropertyAction{target: userPicture; property: "source"; value: "broke"}
+        PauseAnimation{duration: 75}
+        PropertyAction{targets: [textback, textback1]; property: "visible"; value: true}
+        PropertyAction{target: userPicture; property: "source"; value: "/var/lib/AccountsService/icons/" + nameinput.text}
+        PauseAnimation{duration: 75}
+        PropertyAction{targets: [textback, textback1]; property: "visible"; value: false}
+        PropertyAction{target: userPicture; property: "source"; value: "broke"}
+        PauseAnimation{duration: 75}
+        PropertyAction{targets: [textback, textback1]; property: "visible"; value: true}
+        PropertyAction{target: userPicture; property: "source"; value: "/var/lib/AccountsService/icons/" + nameinput.text}
+        PauseAnimation{duration: 75}
+
+        //as you can see i am very good at QML /j
+    }
+
+    // Main UI
 
     Image {
         id: promptBox
@@ -152,6 +180,8 @@ Rectangle {
         }
 
 
+        //Username Input
+
         Image {
             id: imageinput
             source: "assets/input.svg"
@@ -186,6 +216,8 @@ Rectangle {
                     source: "assets/avatarCorners.svg"
                     width: userPictureMissing.width
                     height: userPictureMissing.height
+
+                    visible: config.boolValue("userAvatarRendering") ? true : false
                 }
 
                 Image {
@@ -197,6 +229,8 @@ Rectangle {
                     source: "assets/missingTexture.svg"
                     width: 128
                     height:128
+
+                    visible: config.boolValue("userAvatarRendering") ? true : false
 
                     Image {
                         id: userPicture
@@ -253,7 +287,9 @@ Rectangle {
                     }
                 }
             }
-        } //inputimage
+        }
+
+        // Password Input
 
         Image {
             id: imagepassword
@@ -311,7 +347,8 @@ Rectangle {
                 Keys.onPressed: (event)=> {
                     if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
                         loginEffect.play()
-                        loginTimer.start()
+                        config.realValue("loginVolume") ? loginTimer.start() : sddm.login(nameinput.text, password.text, sessionIndex)
+                        config.boolValue("loginFlickering") ? loginFlicker.restart() : loginFlicker.stop()
                         event.accepted = true
                     }
                 }
@@ -324,7 +361,7 @@ Rectangle {
                     }
                 }
             }
-        } //imagepassword
+        }
 
         Text {
             id: userlabel
@@ -385,7 +422,9 @@ Rectangle {
                 }
 
                 onPressed: parent.source = "assets/buttondown.svg"
-                onReleased: parent.source = "assets/buttonup.svg", loginEffect.play(), loginTimer.start()
+                onReleased: parent.source = "assets/buttonup.svg", loginEffect.play(),
+                config.realValue("loginVolume") ? loginTimer.start() : sddm.login(nameinput.text, password.text, sessionIndex),
+                config.boolValue("loginFlickering") ? loginFlicker.restart() : loginFlicker.stop()
 
                 Timer {
                     id: loginTimer
@@ -402,6 +441,8 @@ Rectangle {
                 text: textConstants.login
             }
         }
+
+        // Session Selector - Find a way to fix the stupid annoying bug where it gets stuck open
 
         ComboBox {
             id : session
@@ -428,6 +469,8 @@ Rectangle {
             KeyNavigation.backtab : password
             KeyNavigation.tab : nameinput
         }
+
+        //Power Options
 
         Image {
             id : shutdownButton
@@ -460,15 +503,9 @@ Rectangle {
                 onReleased : {
                     parent.source = "assets/powerup.svg"
                     clickEffect.play()
-                    shutdownTimer.start()
+                    config.realValue("clickVolume") ? shutdownTimer.start() : sddm.powerOff()
                 }
             }
-        }
-
-        Timer {
-            id: shutdownTimer
-            interval: 700
-            onTriggered: sddm.powerOff()
         }
 
         Image {
@@ -502,11 +539,19 @@ Rectangle {
                 onReleased : {
                     parent.source = "assets/rebootup.svg"
                     clickEffect.play()
-                    rebootTimer.start()
+                    config.realValue("clickVolume") ? rebootTimer.start() : sddm.reboot()
                 }
             }
         }
     } //promptbox
+
+    //Power options timers
+
+    Timer {
+        id: shutdownTimer
+        interval: 700
+        onTriggered: sddm.powerOff()
+    }
 
     Timer {
         id: rebootTimer
